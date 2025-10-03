@@ -1,0 +1,11 @@
+runtime: python39
+
+entrypoint: python sensor.py
+
+env_variables:
+  SERVER_URL: 'https://YOUR-PROJECT-ID.uc.r.appspot.com/accident'
+  ACC_THRESHOLD: '15.0'
+  GYRO_THRESHOLD: '45.0'
+  IMPACT_DURATION_MS: '200'
+  CONSECUTIVE_DETECTIONS_REQUIRED: '3'
+  SAMPLE_RATE_MS: '100'
